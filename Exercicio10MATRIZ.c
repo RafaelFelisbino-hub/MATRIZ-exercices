@@ -1,7 +1,7 @@
 /*Utilizando uma matriz 3x3 construa um algoritmo que preencha a matriz e:
 a. Mostre os elementos da diagonal principal (linha = coluna)
-b. Calcule a mÈdia dos elementos da matriz;
-c. Calcule quantos valores da matriz est„o acima da mÈdia calculada.*/
+b. Calcule a m√©dia dos elementos da matriz;
+c. Calcule quantos valores da matriz est√£o acima da m√©dia calculada.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,9 +12,9 @@ int main()
 	int i, j;
 	
 	
-	printf("Os elementos da diagonal sao :  %.0f\n",  matriz[0][0]);
-	printf("Os elementos da diagonal sao :  %.0f\n",  matriz[1][1]);
-	printf("Os elementos da diagonal sao :  %.0f\n",  matriz[2][2]);
+	for (i = 0; i < 1; i++)
+		for (j = 0; j < 1; j++)
+			printf("Os elementos da diagonal sao :  %.0f, %.0f, %.0f\n", matriz[0][0], matriz[1][1], matriz[2][2]);
 		
 	for (i = 0; i < 3; i++)
 		for (j = 0; j < 3; j++) 
