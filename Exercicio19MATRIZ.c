@@ -1,8 +1,8 @@
-/*Faça um algoritmo que receba as vendas semanais (de um mês) de 5
+/*FaÃ§a um algoritmo que receba as vendas semanais (de um mÃªs) de 5
 vendedores de uma loja e armazene em uma matriz. Calcule e mostre:
-a. O total de vendas do mês de cada vendedor;
+a. O total de vendas do mÃªs de cada vendedor;
 b. O total de vendas de cada semana (todos os vendedores juntos);
-c. O total de vendas do mês;*/
+c. O total de vendas do mÃªs;*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,7 +24,6 @@ int main()
 		for (j = 0; j < 4; j++)
 		{
 			somaMes[i] += matriz[i][j];
-			
 		}
 		somaSemana += somaMes[i];
 		totalVendas += somaSemana;
