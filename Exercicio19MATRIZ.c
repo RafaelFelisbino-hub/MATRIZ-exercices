@@ -31,8 +31,9 @@ int main()
 	for (i = 0; i < 5; i++)
 		for (j = 0; j < 1; j++)
 			printf("O total de vendas do mes do %d vendedor e %.2f:  \n", i+1, somaMes[i]);
-			printf("O total de vendas de cada semana de todos os vendedores e %.2f:  \n", somaSemana);
-			printf("O total de vendas do mes e %.2f:  \n", totalVendas);
+			
+	printf("O total de vendas de cada semana de todos os vendedores e %.2f:  \n", somaSemana);
+	printf("O total de vendas do mes e %.2f:  \n", totalVendas);
 
-			system("pause");
+	system("pause");
 }
