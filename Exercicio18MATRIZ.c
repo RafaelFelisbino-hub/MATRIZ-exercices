@@ -1,14 +1,14 @@
-/*Faça um algoritmo que carregue:
+/*FaÃ§a um algoritmo que carregue:
 a. Um vetor com os nomes de 5 produtos;
-b. Uma matriz 5x4 com os preços dos 5 produtos em 4 lojas diferentes
+b. Uma matriz 5x4 com os preÃ§os dos 5 produtos em 4 lojas diferentes
 (cada linha da matriz corresponde a uma loja);
 
- Diante disso, faça uma segunda matriz 5x4 com os valores dos impostos
+ Diante disso, faÃ§a uma segunda matriz 5x4 com os valores dos impostos
 destes produtos a partir da seguinte regra:
 
-Preço até 50,00 = 5% imposto
-Preço entre 50,00 e 100 = 10% imposto
-Preço acima de 100 = 20% imposto
+PreÃ§o atÃ© 50,00 = 5% imposto
+PreÃ§o entre 50,00 e 100 = 10% imposto
+PreÃ§o acima de 100 = 20% imposto
 
  Imprima ainda, qual o nome do produto mais caro na loja 3 (terceira linha
 da matriz).*/
@@ -19,7 +19,7 @@ da matriz).*/
 
 int main() 
 {
-	char nomesProdutos[5][100], nomeCaro[100];
+	char nomesProdutos[5][100], nomeCaro[100], loja[4][20] = {"Adidas","Nike","Cervejaria","Cachoeiras"};
 	float lojaProduto[4][5], matrizImpostos[4][5], maisCaro = 0;
 	int i, j;
 
@@ -33,7 +33,7 @@ int main()
 	for (i = 0; i < 4; i++)
 		for (j = 0; j < 5; j++) 
 		{
-			printf("Digite o preco dos produtos [%d] loja [%d] produto:  ", i, j);
+			printf("Digite o preco dos produtos [%s] loja [%s] produto:  ", loja[i], nomesProdutos[j]);
 			scanf_s("%f", &lojaProduto[i][j]);
 		}
 
@@ -64,7 +64,7 @@ int main()
 			printf("A matriz com os impostos [%d][%d]:  %.2f\n", i, j, matrizImpostos[i][j]);
 		}
 
-	printf("O produto mais caro da 3 linha e %s\n", nomeCaro);
+	printf("O produto mais caro da 3 linha e %s com o valor de %.0f\n", nomeCaro, maisCaro);
 
 	system("pause");
 }
