@@ -6,13 +6,14 @@ média dos valores de cada linha da matriz.*/
 
 int main() {
     int i, j;
-    float matriz[3][3], vetor[3] = {0,0,0};
+    float matriz[3][3], vetor[3];
 
     for (i = 0; i < 3; i++)
     {
+        vetor[i] = 0;
         for (j = 0; j < 3; j++)
         {
-            printf("Digite os numeros: %d linha, %d coluna:  ", i, j);
+            printf("Digite os numeros: %d linha, %d coluna:  ", i+1, j+1);
             scanf_s("%f", &matriz[i][j]);
             
             vetor[i] += matriz[i][j];
@@ -22,7 +23,7 @@ int main() {
     }
    
     for (i = 0; i < 3; i++)
-          printf("As medias da linha %d :  %.2f\n", i, vetor[i]);
+          printf("As medias da linha %d :  %.2f\n", i+1, vetor[i]);
     
     system("pause");
 }
